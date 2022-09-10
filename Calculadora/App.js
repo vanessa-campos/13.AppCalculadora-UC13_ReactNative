@@ -53,6 +53,10 @@ export default function App() {
         return
       case '+/-':
         return
+      case '%':
+        setLastNumber(currentNumber + " % ")
+        setCurrentNumber((currentNumber / 100).toString())
+        return
     }
 
     setCurrentNumber(currentNumber + buttonPressed)
